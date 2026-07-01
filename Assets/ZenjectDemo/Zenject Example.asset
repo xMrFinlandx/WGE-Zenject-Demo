@@ -1,0 +1,293 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5436484660203929146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cf535b62f6d4c2987341bc7b3cd1fff, type: 3}
+  m_Name: Editor Only Data
+  m_EditorClassIdentifier: 
+  _sceneNodeData:
+  - NodeName: Zenject Scene 2
+    SceneAsset: {fileID: 102900000, guid: d4bf37ce5f3e95247b641ddb73e9cf3f, type: 3}
+    SceneAssetGuid: d4bf37ce5f3e95247b641ddb73e9cf3f
+    ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 2
+    BuildIndex: 1
+    Guid: 2a4572c3-9283-4987-8d93-598e7be7c0a6
+    Position: {x: 755, y: 329}
+    PortsData:
+    - Name: Left
+      Guid: 334605af-92ab-4bc3-ae3f-a075d784d217
+      IsInput: 1
+      IsHorizontal: 1
+      IsAdditional: 0
+    - Name: Bottom Left
+      Guid: ec523df4-cb30-4926-b828-f96f9f02da0a
+      IsInput: 0
+      IsHorizontal: 0
+      IsAdditional: 0
+    - Name: Bottom Right
+      Guid: 6ce8f4a2-6525-465a-8e28-1aea1c89286a
+      IsInput: 0
+      IsHorizontal: 0
+      IsAdditional: 0
+  - NodeName: Zenject Scene 4
+    SceneAsset: {fileID: 102900000, guid: 1211a79bcfe2eb143bd91e73d4c54bb0, type: 3}
+    SceneAssetGuid: 1211a79bcfe2eb143bd91e73d4c54bb0
+    ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 4
+    BuildIndex: 4
+    Guid: 060a11d3-9928-4565-80e4-8890531f0bdc
+    Position: {x: 870, y: 516}
+    PortsData:
+    - Name: Top
+      Guid: e11cba10-7350-47b0-b271-1b36b9533f73
+      IsInput: 1
+      IsHorizontal: 0
+      IsAdditional: 0
+    - Name: Left
+      Guid: bae17cd6-3e17-4a65-9a19-a2a100f82bcb
+      IsInput: 1
+      IsHorizontal: 1
+      IsAdditional: 0
+  - NodeName: Zenject Scene 5
+    SceneAsset: {fileID: 102900000, guid: a778c7bcad65ff4409cf574b90cc6eb0, type: 3}
+    SceneAssetGuid: a778c7bcad65ff4409cf574b90cc6eb0
+    ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 5
+    BuildIndex: 3
+    Guid: 61182c5e-d281-44ed-aaf4-895a079d98a4
+    Position: {x: 558, y: 626}
+    PortsData:
+    - Name: Right
+      Guid: a6102e18-878d-4614-9295-394e501c5df4
+      IsInput: 0
+      IsHorizontal: 1
+      IsAdditional: 0
+    - Name: Top Left
+      Guid: a66527c5-568f-4766-b528-35453477e34d
+      IsInput: 1
+      IsHorizontal: 0
+      IsAdditional: 0
+    - Name: Top Right
+      Guid: c97bd904-707e-4b3a-80f7-78f18dd0b8eb
+      IsInput: 1
+      IsHorizontal: 0
+      IsAdditional: 0
+  - NodeName: Zenject Scene 3
+    SceneAsset: {fileID: 102900000, guid: dd6ce90f30c26bf43884bc7c8d31878f, type: 3}
+    SceneAssetGuid: dd6ce90f30c26bf43884bc7c8d31878f
+    ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 3
+    BuildIndex: 2
+    Guid: 353b9e24-84b2-40b9-9b77-1882f0a30a0d
+    Position: {x: 459, y: 462}
+    PortsData:
+    - Name: Top
+      Guid: ab6f1fd4-5475-4460-b4c8-040df0c7a007
+      IsInput: 1
+      IsHorizontal: 0
+      IsAdditional: 0
+    - Name: Bottom
+      Guid: 378e115a-651c-44ba-b097-8eca81ae6498
+      IsInput: 0
+      IsHorizontal: 0
+      IsAdditional: 0
+  - NodeName: Zenject Scene 1
+    SceneAsset: {fileID: 102900000, guid: d951d8402ed18e546b3638c3812860fa, type: 3}
+    SceneAssetGuid: d951d8402ed18e546b3638c3812860fa
+    ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 1
+    BuildIndex: 5
+    Guid: 06757908-e828-4c33-9706-f153e62b3abc
+    Position: {x: 503, y: 329}
+    PortsData:
+    - Name: Right
+      Guid: b97bb57d-0319-42ae-9f17-80a451eb9e19
+      IsInput: 0
+      IsHorizontal: 1
+      IsAdditional: 0
+    - Name: Bottom  1
+      Guid: e5ccf3b0-3077-40bb-bdaf-0d38082ebbe2
+      IsInput: 0
+      IsHorizontal: 0
+      IsAdditional: 0
+  _edgesData:
+  - TransitionType: 0
+    IsFacingRight: 0
+    FromPortGuid: 334605af-92ab-4bc3-ae3f-a075d784d217
+    ToPortGuid: b97bb57d-0319-42ae-9f17-80a451eb9e19
+    EdgeGuid: 4c89fe2c-3b5d-42fc-a0fe-6d9d37c612a8
+  - TransitionType: 1
+    IsFacingRight: 0
+    FromPortGuid: e11cba10-7350-47b0-b271-1b36b9533f73
+    ToPortGuid: 6ce8f4a2-6525-465a-8e28-1aea1c89286a
+    EdgeGuid: d4482730-4225-403c-8146-6669499fb676
+  - TransitionType: 0
+    IsFacingRight: 0
+    FromPortGuid: ab6f1fd4-5475-4460-b4c8-040df0c7a007
+    ToPortGuid: e5ccf3b0-3077-40bb-bdaf-0d38082ebbe2
+    EdgeGuid: fd924129-9343-42a4-8f09-98fd44ea67b7
+  - TransitionType: 0
+    IsFacingRight: 0
+    FromPortGuid: a66527c5-568f-4766-b528-35453477e34d
+    ToPortGuid: 378e115a-651c-44ba-b097-8eca81ae6498
+    EdgeGuid: a1e9532e-e3bf-4b33-9f3f-64da03be00da
+  - TransitionType: 2
+    IsFacingRight: 0
+    FromPortGuid: c97bd904-707e-4b3a-80f7-78f18dd0b8eb
+    ToPortGuid: ec523df4-cb30-4926-b828-f96f9f02da0a
+    EdgeGuid: 9af22640-3753-4aee-b0b5-82568131f4d4
+  - TransitionType: 0
+    IsFacingRight: 0
+    FromPortGuid: bae17cd6-3e17-4a65-9a19-a2a100f82bcb
+    ToPortGuid: a6102e18-878d-4614-9295-394e501c5df4
+    EdgeGuid: 1b8930e0-010d-4865-8cd9-c1a212a41041
+  _testResults:
+  - Tested: 1
+    ScenePath: Assets/InternalProject/ZenjectDemo/Scenes/Zenject Scene 2.unity
+    NodeName: Zenject Scene 2
+    ErrorsCount: 0
+    WarningsCount: 0
+    TestResults:
+    - Description: No missing ports found.
+      TestStatusType: 0
+    - Description: No duplicate ports found.
+      TestStatusType: 0
+  - Tested: 1
+    ScenePath: Assets/InternalProject/ZenjectDemo/Scenes/Zenject Scene 1.unity
+    NodeName: Zenject Scene 1
+    ErrorsCount: 0
+    WarningsCount: 0
+    TestResults:
+    - Description: No missing ports found.
+      TestStatusType: 0
+    - Description: No duplicate ports found.
+      TestStatusType: 0
+  - Tested: 1
+    ScenePath: Assets/InternalProject/ZenjectDemo/Scenes/Zenject Scene 3.unity
+    NodeName: Zenject Scene 3
+    ErrorsCount: 0
+    WarningsCount: 0
+    TestResults:
+    - Description: No missing ports found.
+      TestStatusType: 0
+    - Description: No duplicate ports found.
+      TestStatusType: 0
+  - Tested: 1
+    ScenePath: Assets/InternalProject/ZenjectDemo/Scenes/Zenject Scene 4.unity
+    NodeName: Zenject Scene 4
+    ErrorsCount: 0
+    WarningsCount: 0
+    TestResults:
+    - Description: No missing ports found.
+      TestStatusType: 0
+    - Description: No duplicate ports found.
+      TestStatusType: 0
+  - Tested: 1
+    ScenePath: Assets/InternalProject/ZenjectDemo/Scenes/Zenject Scene 5.unity
+    NodeName: Zenject Scene 5
+    ErrorsCount: 0
+    WarningsCount: 0
+    TestResults:
+    - Description: No missing ports found.
+      TestStatusType: 0
+    - Description: No duplicate ports found.
+      TestStatusType: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c153c71e3fad4039a2b4b7e89543d599, type: 3}
+  m_Name: Zenject Example
+  m_EditorClassIdentifier: 
+  _scenesData:
+  - SceneName: Zenject Scene 2
+    NodeName: Zenject Scene 2
+    BuildIndex: 1
+    PortsData:
+    - Name: Left
+      Guid: 334605af-92ab-4bc3-ae3f-a075d784d217
+      IsAdditional: 0
+    - Name: Bottom Left
+      Guid: ec523df4-cb30-4926-b828-f96f9f02da0a
+      IsAdditional: 0
+    - Name: Bottom Right
+      Guid: 6ce8f4a2-6525-465a-8e28-1aea1c89286a
+      IsAdditional: 0
+  - SceneName: Zenject Scene 4
+    NodeName: Zenject Scene 4
+    BuildIndex: 4
+    PortsData:
+    - Name: Top
+      Guid: e11cba10-7350-47b0-b271-1b36b9533f73
+      IsAdditional: 0
+    - Name: Left
+      Guid: bae17cd6-3e17-4a65-9a19-a2a100f82bcb
+      IsAdditional: 0
+  - SceneName: Zenject Scene 5
+    NodeName: Zenject Scene 5
+    BuildIndex: 3
+    PortsData:
+    - Name: Right
+      Guid: a6102e18-878d-4614-9295-394e501c5df4
+      IsAdditional: 0
+    - Name: Top Left
+      Guid: a66527c5-568f-4766-b528-35453477e34d
+      IsAdditional: 0
+    - Name: Top Right
+      Guid: c97bd904-707e-4b3a-80f7-78f18dd0b8eb
+      IsAdditional: 0
+  - SceneName: Zenject Scene 3
+    NodeName: Zenject Scene 3
+    BuildIndex: 2
+    PortsData:
+    - Name: Top
+      Guid: ab6f1fd4-5475-4460-b4c8-040df0c7a007
+      IsAdditional: 0
+    - Name: Bottom
+      Guid: 378e115a-651c-44ba-b097-8eca81ae6498
+      IsAdditional: 0
+  - SceneName: Zenject Scene 1
+    NodeName: Zenject Scene 1
+    BuildIndex: 5
+    PortsData:
+    - Name: Right
+      Guid: b97bb57d-0319-42ae-9f17-80a451eb9e19
+      IsAdditional: 0
+    - Name: Bottom  1
+      Guid: e5ccf3b0-3077-40bb-bdaf-0d38082ebbe2
+      IsAdditional: 0
+  _connectionsData:
+  - TransitionType: 0
+    IsFacingRight: 0
+    FromPortGuid: 334605af-92ab-4bc3-ae3f-a075d784d217
+    ToPortGuid: b97bb57d-0319-42ae-9f17-80a451eb9e19
+  - TransitionType: 1
+    IsFacingRight: 0
+    FromPortGuid: e11cba10-7350-47b0-b271-1b36b9533f73
+    ToPortGuid: 6ce8f4a2-6525-465a-8e28-1aea1c89286a
+  - TransitionType: 0
+    IsFacingRight: 0
+    FromPortGuid: ab6f1fd4-5475-4460-b4c8-040df0c7a007
+    ToPortGuid: e5ccf3b0-3077-40bb-bdaf-0d38082ebbe2
+  - TransitionType: 0
+    IsFacingRight: 0
+    FromPortGuid: a66527c5-568f-4766-b528-35453477e34d
+    ToPortGuid: 378e115a-651c-44ba-b097-8eca81ae6498
+  - TransitionType: 2
+    IsFacingRight: 0
+    FromPortGuid: c97bd904-707e-4b3a-80f7-78f18dd0b8eb
+    ToPortGuid: ec523df4-cb30-4926-b828-f96f9f02da0a
+  - TransitionType: 0
+    IsFacingRight: 0
+    FromPortGuid: bae17cd6-3e17-4a65-9a19-a2a100f82bcb
+    ToPortGuid: a6102e18-878d-4614-9295-394e501c5df4
+  _hasErrors: 0
+  _editorData: {fileID: -5436484660203929146}
