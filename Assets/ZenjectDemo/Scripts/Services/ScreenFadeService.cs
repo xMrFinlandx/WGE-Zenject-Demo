@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace ZenjectDemo
 {
-    public class ScreenFade : MonoBehaviour, IScreenFadeService
+    public class ScreenFadeService : MonoBehaviour, IScreenFadeService
     {
         [SerializeField] private Image _panel;
         

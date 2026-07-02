@@ -5,11 +5,11 @@ namespace ZenjectDemo
 {
     public class ScreenFadeProjectInstaller : MonoInstaller
     {
-        [SerializeField] private ScreenFade _screenFadePrefab;
+        [SerializeField] private ScreenFadeService _screenFadePrefab;
 
         public override void InstallBindings()
         {
-            Container.BindInterfacesAndSelfTo<ScreenFade>()
+            Container.BindInterfacesAndSelfTo<ScreenFadeService>()
                 .FromComponentInNewPrefab(_screenFadePrefab)
                 .AsSingle()
                 .NonLazy();

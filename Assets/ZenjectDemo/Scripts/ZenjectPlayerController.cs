@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using WorldGraphEditor;
 using Zenject;
 
@@ -43,47 +44,22 @@ namespace ZenjectDemo
         
         private bool _canJump => _jumpBufferCounter > 0f && _hangTimeCounter > 0f && _isControllerEnabled;
 
-        private ITransitionManager _manager;
-        
-        [Inject]
-        private void Constructor(ITransitionManager manager)
+        public void SetPushForce(PushData pushData)
         {
-            _manager = manager;
+            if (pushData.Exists) 
+                _rigidbody.AddForce(pushData.Force, ForceMode2D.Impulse);
+        }
+
+        public void Enable()
+        {
             _isControllerEnabled = true;
         }
-
+        
         private void Awake()
-        {
-            _manager.TransitionStarted += DisableMovement;
-            _manager.SceneLoaded += OnSceneLoaded;
-        }
-
-        private void DisableMovement()
         {
             _isControllerEnabled = false;
         }
-
-        private void OnDestroy()
-        {
-            _manager.TransitionStarted -= DisableMovement;
-            _manager.SceneLoaded -= OnSceneLoaded;
-        }
-
-        private void OnSceneLoaded()
-        {
-            transform.position = _manager.PlayerSpawnPosition;
-            
-            if (_manager.OutputTransitionComponent is not IPusher pusher)
-                return;
-
-            var pushData = pusher.GetPushData();
-            
-            if (pushData.Exists) 
-                _rigidbody.AddForce(pushData.Force, ForceMode2D.Impulse);
-            
-            _isControllerEnabled = true;
-        }
-
+        
         private void FixedUpdate()
         {
             _isGrounded = IsGrounded();

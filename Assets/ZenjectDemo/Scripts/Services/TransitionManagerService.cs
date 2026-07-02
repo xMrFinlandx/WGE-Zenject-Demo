@@ -82,10 +82,10 @@ namespace ZenjectDemo
                 {
                     _graphDataService.SetVisited(data.TargetPassageGuid);
                 }
-
-                await _screenFadeService.HideAsync(_cts.Token);
                 
                 SceneLoaded?.Invoke();
+                
+                await _screenFadeService.HideAsync(_cts.Token);
                 
                 TransitionEnded?.Invoke();
             }
