@@ -5,7 +5,7 @@ namespace ZenjectDemo
 {
     public class PlayerControllerProjectInstaller : MonoInstaller
     {
-        [SerializeField] private ZenjectPlayerController _playerPrefab = null!;
+        [SerializeField] private ZenjectPlayerController _playerPrefab;
         
         public override void InstallBindings()
         {
@@ -13,7 +13,6 @@ namespace ZenjectDemo
                 .FromComponentInNewPrefab(_playerPrefab)
                 .AsSingle()
                 .NonLazy();
-            
         }
     }
 }

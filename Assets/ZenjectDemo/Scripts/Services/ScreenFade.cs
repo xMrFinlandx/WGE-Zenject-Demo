@@ -11,7 +11,7 @@ namespace ZenjectDemo
         [SerializeField] private Image _panel;
         
         [SerializeField] private float _showDuration = 0.5f;
-        [SerializeField] private float _hideDuration = 0.2f;
+        [SerializeField] private float _hideDuration = 0.5f;
         
         private Coroutine _fadeCoroutine;
         
@@ -48,10 +48,11 @@ namespace ZenjectDemo
                 });
             }
             
-            _fadeCoroutine = StartCoroutine(FadeRoutine(targetAlpha, duration, tcs, cancellationToken));
+            _fadeCoroutine = StartCoroutine(FadeCoroutine(targetAlpha, duration, tcs, cancellationToken));
             return tcs.Task;
         }
-        private IEnumerator FadeRoutine(float targetAlpha, float duration, TaskCompletionSource<bool> tcs, CancellationToken cancellationToken)
+        
+        private IEnumerator FadeCoroutine(float targetAlpha, float duration, TaskCompletionSource<bool> tcs, CancellationToken cancellationToken)
         {
             var startAlpha = _panel.color.a;
             var elapsed = 0f;

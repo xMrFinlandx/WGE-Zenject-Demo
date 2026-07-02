@@ -68,7 +68,7 @@ namespace ZenjectDemo
         
         public void Traverse()
         {
-            _manager.GoFrom(GetGuid(), false);
+            _manager.GoFromAsync(GetGuid());
         }
         
         private void Awake()

@@ -117,7 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _panel: {fileID: 5775567457801310950}
   _showDuration: 0.5
-  _hideDuration: 0.2
+  _hideDuration: 2
 --- !u!1 &6900454393597296635
 GameObject:
   m_ObjectHideFlags: 0
