@@ -100,7 +100,7 @@ namespace ZenjectDemo
             if (this.IsOutput(_manager))
                 _canBeUsed = false;
 
-            if (_graphDataService.IsVisited(GetGuid()) && this.IsShortcutDestination())
+            if (_graphDataService.IsPortVisited(GetGuid()) && this.IsShortcutDestination())
             {
                 _spriteRenderer.color = new Color(0.44f, 1f, 0.37f);
             }

@@ -40,7 +40,7 @@ namespace ZenjectDemo
 
         public async Task GoFromAsync(string currentPortGuid, ITransitionContext context = null)
         {
-            var isPortVisited = _graphDataService.IsVisited(currentPortGuid);
+            var isPortVisited = _graphDataService.IsPortVisited(currentPortGuid);
             
             if (!Graph.CanPassTransition(currentPortGuid, isPortVisited, out var status))
             {
@@ -67,7 +67,7 @@ namespace ZenjectDemo
 
                 InputTransitionComponent = TransitionComponentUtility.FindByGuid(data.CurrentPassageGuid);
                 
-                _graphDataService.SetVisited(data.CurrentPassageGuid);
+                _graphDataService.SetPortVisited(data.CurrentPassageGuid);
 
                 await SceneManager.LoadSceneAsync(data.TargetSceneBuildIndex);
 
@@ -80,7 +80,7 @@ namespace ZenjectDemo
                 }
                 else
                 {
-                    _graphDataService.SetVisited(data.TargetPassageGuid);
+                    _graphDataService.SetPortVisited(data.TargetPassageGuid);
                 }
                 
                 SceneLoaded?.Invoke();

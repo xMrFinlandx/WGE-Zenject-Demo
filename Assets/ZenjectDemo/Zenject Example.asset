@@ -238,11 +238,6 @@ MonoBehaviour:
     EdgeGuid: ff12cad5-a137-418b-b846-0f72ce06858e
   - TransitionType: 0
     IsFacingRight: 0
-    FromPortGuid: 70e425fe-b16f-40c5-afed-b156f08db0bd
-    ToPortGuid: 47449373-e4a6-4ba6-8138-cebc86adfdd4
-    EdgeGuid: 6108c667-70a3-4c26-8783-b5be9a4d3462
-  - TransitionType: 0
-    IsFacingRight: 0
     FromPortGuid: a1be4b10-4954-46bf-b888-30b12168da71
     ToPortGuid: 09f7f5a6-7792-4c62-8a35-3b4d10417619
     EdgeGuid: fc68bcc5-3aef-4eb7-8230-12405399c15b
@@ -266,7 +261,42 @@ MonoBehaviour:
     FromPortGuid: a66527c5-568f-4766-b528-35453477e34d
     ToPortGuid: 378e115a-651c-44ba-b097-8eca81ae6498
     EdgeGuid: a1e9532e-e3bf-4b33-9f3f-64da03be00da
+  - TransitionType: 0
+    IsFacingRight: 0
+    FromPortGuid: 70e425fe-b16f-40c5-afed-b156f08db0bd
+    ToPortGuid: 47449373-e4a6-4ba6-8138-cebc86adfdd4
+    EdgeGuid: 6108c667-70a3-4c26-8783-b5be9a4d3462
   _testResults:
+  - Tested: 1
+    ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 3.unity
+    NodeName: Zenject Scene 3
+    ErrorsCount: 0
+    WarningsCount: 0
+    TestResults:
+    - Description: No missing ports found.
+      TestStatusType: 0
+    - Description: No duplicate ports found.
+      TestStatusType: 0
+  - Tested: 1
+    ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 1.unity
+    NodeName: Start Scene
+    ErrorsCount: 0
+    WarningsCount: 0
+    TestResults:
+    - Description: No missing ports found.
+      TestStatusType: 0
+    - Description: No duplicate ports found.
+      TestStatusType: 0
+  - Tested: 1
+    ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 2.unity
+    NodeName: Zenject Scene 2
+    ErrorsCount: 0
+    WarningsCount: 0
+    TestResults:
+    - Description: No missing ports found.
+      TestStatusType: 0
+    - Description: No duplicate ports found.
+      TestStatusType: 0
   - Tested: 1
     ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 5.unity
     NodeName: Zenject Scene 5
@@ -281,80 +311,50 @@ MonoBehaviour:
     ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 4.unity
     NodeName: Zenject Scene 4
     ErrorsCount: 0
-    WarningsCount: 1
-    TestResults:
-    - Description: Scene has missing ports.
-      TestStatusType: 1
-    - Description: No duplicate ports found.
-      TestStatusType: 0
-  - Tested: 1
-    ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 2.unity
-    NodeName: Zenject Scene 2
-    ErrorsCount: 0
-    WarningsCount: 1
-    TestResults:
-    - Description: Scene has missing ports.
-      TestStatusType: 1
-    - Description: No duplicate ports found.
-      TestStatusType: 0
-  - Tested: 1
-    ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 3.unity
-    NodeName: Zenject Scene 3
-    ErrorsCount: 0
-    WarningsCount: 1
-    TestResults:
-    - Description: Scene has missing ports.
-      TestStatusType: 1
-    - Description: No duplicate ports found.
-      TestStatusType: 0
-  - Tested: 1
-    ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 1.unity
-    NodeName: Start Scene
-    ErrorsCount: 1
     WarningsCount: 0
     TestResults:
-    - Description: Scene has duplicate ports.
-      TestStatusType: 2
     - Description: No missing ports found.
       TestStatusType: 0
-  - Tested: 1
-    ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 8.unity
-    NodeName: Zenject Scene 8
-    ErrorsCount: 0
-    WarningsCount: 1
-    TestResults:
-    - Description: Scene has missing ports.
-      TestStatusType: 1
-    - Description: No duplicate ports found.
-      TestStatusType: 0
-  - Tested: 1
-    ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 9.unity
-    NodeName: Zenject Scene 9
-    ErrorsCount: 0
-    WarningsCount: 1
-    TestResults:
-    - Description: Scene has missing ports.
-      TestStatusType: 1
     - Description: No duplicate ports found.
       TestStatusType: 0
   - Tested: 1
     ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 7.unity
     NodeName: Zenject Scene 7
     ErrorsCount: 0
-    WarningsCount: 1
+    WarningsCount: 0
     TestResults:
-    - Description: Scene has missing ports.
-      TestStatusType: 1
+    - Description: No missing ports found.
+      TestStatusType: 0
     - Description: No duplicate ports found.
       TestStatusType: 0
   - Tested: 1
     ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 6.unity
     NodeName: Zenject Scene 6
     ErrorsCount: 0
-    WarningsCount: 1
+    WarningsCount: 0
     TestResults:
-    - Description: Scene has missing ports.
-      TestStatusType: 1
+    - Description: No missing ports found.
+      TestStatusType: 0
+    - Description: No duplicate ports found.
+      TestStatusType: 0
+  - Tested: 1
+    ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 9.unity
+    NodeName: Zenject Scene 9
+    ErrorsCount: 0
+    WarningsCount: 0
+    TestResults:
+    - Description: No missing ports found.
+      TestStatusType: 0
+    - Description: No duplicate ports found.
+      TestStatusType: 0
+  - Tested: 1
+    ScenePath: Assets/ZenjectDemo/Scenes/Zenject Scene 8.unity
+    NodeName: Zenject Scene 8
+    ErrorsCount: 0
+    WarningsCount: 0
+    TestResults:
+    - Description: No missing ports found.
+      TestStatusType: 0
     - Description: No duplicate ports found.
       TestStatusType: 0
 --- !u!114 &11400000
@@ -505,10 +505,6 @@ MonoBehaviour:
     ToPortGuid: 45a2667d-2546-481b-9f59-3ea84d9933be
   - TransitionType: 0
     IsFacingRight: 0
-    FromPortGuid: 70e425fe-b16f-40c5-afed-b156f08db0bd
-    ToPortGuid: 47449373-e4a6-4ba6-8138-cebc86adfdd4
-  - TransitionType: 0
-    IsFacingRight: 0
     FromPortGuid: a1be4b10-4954-46bf-b888-30b12168da71
     ToPortGuid: 09f7f5a6-7792-4c62-8a35-3b4d10417619
   - TransitionType: 1
@@ -527,5 +523,9 @@ MonoBehaviour:
     IsFacingRight: 0
     FromPortGuid: a66527c5-568f-4766-b528-35453477e34d
     ToPortGuid: 378e115a-651c-44ba-b097-8eca81ae6498
+  - TransitionType: 0
+    IsFacingRight: 0
+    FromPortGuid: 70e425fe-b16f-40c5-afed-b156f08db0bd
+    ToPortGuid: 47449373-e4a6-4ba6-8138-cebc86adfdd4
   _hasErrors: 0
   _editorData: {fileID: -5436484660203929146}

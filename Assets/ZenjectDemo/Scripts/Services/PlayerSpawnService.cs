@@ -7,8 +7,8 @@ namespace ZenjectDemo
 {
     public class PlayerSpawnService : IDisposable
     {
-        private ITransitionManager _manager;
-        private ZenjectPlayerController _playerPrefab;
+        private readonly ITransitionManager _manager;
+        private readonly ZenjectPlayerController _playerPrefab;
         
         public PlayerSpawnService(ITransitionManager manager, ZenjectPlayerController playerController)
         {
@@ -32,9 +32,6 @@ namespace ZenjectDemo
         public void Dispose()
         {
             _manager.TransitionEnded -= SpawnPlayer;
-
-            _manager = null;
-            _playerPrefab = null;
         }
     }
 }

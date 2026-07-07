@@ -2,7 +2,9 @@
 {
     public interface IGraphDataService
     {
-        public void SetVisited(string guid);
-        public bool IsVisited(string guid);
+        public int OpenedShortcuts { get; }
+
+        public void SetPortVisited(string guid);
+        public bool IsPortVisited(string guid);
     }
 }

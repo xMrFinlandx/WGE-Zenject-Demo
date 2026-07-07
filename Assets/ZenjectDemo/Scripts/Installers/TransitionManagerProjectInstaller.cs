@@ -10,7 +10,6 @@ namespace ZenjectDemo
             var graph = WGEProjectConfig.Instance.GetWorldGraph();
 
             Container.BindInterfacesAndSelfTo<WorldGraph>().FromInstance(graph).AsSingle();
-            Container.BindInterfacesAndSelfTo<GraphDataService>().AsSingle();
             Container.BindInterfacesAndSelfTo<TransitionManagerService>().AsSingle();
         }
     }
