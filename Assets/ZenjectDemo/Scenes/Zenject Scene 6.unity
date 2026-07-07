@@ -331,15 +331,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _port:
-    _selectedGuid: a6102e18-878d-4614-9295-394e501c5df4
+    _selectedGuid: 1a946a4a-8c80-40cb-a06f-d173d9210580
     _displayData:
-    - Right
     - Top Left
     - Top Right
+    - Right
     _guidData:
-    - a6102e18-878d-4614-9295-394e501c5df4
-    - a66527c5-568f-4766-b528-35453477e34d
-    - c97bd904-707e-4b3a-80f7-78f18dd0b8eb
+    - 73467d96-682e-458f-976b-a0b4dc5ba02b
+    - 34a7b1e5-8639-4994-8396-26a025df95d7
+    - 1a946a4a-8c80-40cb-a06f-d173d9210580
     _selectedName: Right
   _pushForce:
     _enabled: 1
@@ -426,7 +426,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 2297618732363737569, guid: 75c111211f4f2f24a9f65da81824c992, type: 3}
-  m_Color: {r: 1, g: 0.36, b: 0.35, a: 1}
+  m_Color: {r: 0.44, g: 1, b: 0.37, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -495,15 +495,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _port:
-    _selectedGuid: a66527c5-568f-4766-b528-35453477e34d
+    _selectedGuid: 73467d96-682e-458f-976b-a0b4dc5ba02b
     _displayData:
-    - Right
     - Top Left
     - Top Right
+    - Right
     _guidData:
-    - a6102e18-878d-4614-9295-394e501c5df4
-    - a66527c5-568f-4766-b528-35453477e34d
-    - c97bd904-707e-4b3a-80f7-78f18dd0b8eb
+    - 73467d96-682e-458f-976b-a0b4dc5ba02b
+    - 34a7b1e5-8639-4994-8396-26a025df95d7
+    - 1a946a4a-8c80-40cb-a06f-d173d9210580
     _selectedName: Top Left
   _pushForce:
     _enabled: 0
@@ -1633,7 +1633,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 2297618732363737569, guid: 75c111211f4f2f24a9f65da81824c992, type: 3}
-  m_Color: {r: 1, g: 0.36, b: 0.35, a: 1}
+  m_Color: {r: 0.4, g: 0.79, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1702,15 +1702,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _port:
-    _selectedGuid: c97bd904-707e-4b3a-80f7-78f18dd0b8eb
+    _selectedGuid: 34a7b1e5-8639-4994-8396-26a025df95d7
     _displayData:
-    - Right
     - Top Left
     - Top Right
+    - Right
     _guidData:
-    - a6102e18-878d-4614-9295-394e501c5df4
-    - a66527c5-568f-4766-b528-35453477e34d
-    - c97bd904-707e-4b3a-80f7-78f18dd0b8eb
+    - 73467d96-682e-458f-976b-a0b4dc5ba02b
+    - 34a7b1e5-8639-4994-8396-26a025df95d7
+    - 1a946a4a-8c80-40cb-a06f-d173d9210580
     _selectedName: Top Right
   _pushForce:
     _enabled: 0

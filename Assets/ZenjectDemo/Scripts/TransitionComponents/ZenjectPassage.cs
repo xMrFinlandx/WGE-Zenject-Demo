@@ -15,11 +15,13 @@ namespace ZenjectDemo
 
         private bool _canBeUsed;
         private ITransitionManager _manager;
+        private IGraphDataService _graphDataService;
         
         [Inject]
-        private void Construct(ITransitionManager manager)
+        private void Construct(ITransitionManager manager, IGraphDataService graphDataService)
         {
             _manager = manager;
+            _graphDataService = graphDataService;
         }
 
         private void OnValidate()
@@ -29,6 +31,11 @@ namespace ZenjectDemo
 
             _spriteRenderer = GetComponent<SpriteRenderer>();
 
+            ResolveColor();
+        }
+
+        private void ResolveColor()
+        {
             if (this.IsShortcutDestination() || this.IsOneWayDestination())
             {
                 _spriteRenderer.color = new Color(1f, 0.36f, 0.35f);
@@ -48,6 +55,8 @@ namespace ZenjectDemo
         public void Refresh(RefreshContext context)
         {
             context.FillPortsDropdownData(_port);
+
+            ResolveColor();
         }
 #endif
 
@@ -90,6 +99,11 @@ namespace ZenjectDemo
         {
             if (this.IsOutput(_manager))
                 _canBeUsed = false;
+
+            if (_graphDataService.IsVisited(GetGuid()) && this.IsShortcutDestination())
+            {
+                _spriteRenderer.color = new Color(0.44f, 1f, 0.37f);
+            }
         }
 
         private void OnTriggerEnter2D(Collider2D other)

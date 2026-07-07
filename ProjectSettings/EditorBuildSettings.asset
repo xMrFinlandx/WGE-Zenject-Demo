@@ -23,6 +23,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ZenjectDemo/Scenes/Zenject Scene 1.unity
     guid: d951d8402ed18e546b3638c3812860fa
+  - enabled: 1
+    path: Assets/ZenjectDemo/Scenes/Zenject Scene 8.unity
+    guid: 6b25472be7c4e1d428a094417a29b12b
+  - enabled: 1
+    path: Assets/ZenjectDemo/Scenes/Zenject Scene 9.unity
+    guid: fd21fc02804a4914faa9e5f2ff5a7e9b
+  - enabled: 1
+    path: Assets/ZenjectDemo/Scenes/Zenject Scene 7.unity
+    guid: 3935440ebe4e2194d9d7fccaca64a11f
+  - enabled: 1
+    path: Assets/ZenjectDemo/Scenes/Zenject Scene 6.unity
+    guid: f81f8ebee7e0c2a40b708c2a3debe0ce
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
