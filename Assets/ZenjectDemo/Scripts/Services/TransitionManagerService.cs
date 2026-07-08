@@ -17,7 +17,7 @@ namespace ZenjectDemo
         public event Action SceneLoaded;
         public event Action TransitionEnded;
 
-        public Vector3 PlayerSpawnPosition { get; private set; }
+        public Vector3 NextSpawnPosition { get; private set; }
 
         private readonly CancellationTokenSource _cts;
         private readonly IScreenFadeService _screenFadeService;
@@ -72,7 +72,7 @@ namespace ZenjectDemo
                 await SceneManager.LoadSceneAsync(data.TargetSceneBuildIndex);
 
                 OutputTransitionComponent = TransitionComponentUtility.FindByGuid(data.TargetPassageGuid);
-                PlayerSpawnPosition = OutputTransitionComponent?.GetSpawnPosition() ?? Vector3.zero;
+                NextSpawnPosition = OutputTransitionComponent?.GetSpawnPosition() ?? Vector3.zero;
 
                 if (OutputTransitionComponent == null)
                 {

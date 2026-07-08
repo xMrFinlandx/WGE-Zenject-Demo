@@ -21,7 +21,7 @@ namespace ZenjectDemo
 
         private void SpawnPlayer()
         {
-            var playerController = Object.Instantiate(_playerPrefab, _manager.PlayerSpawnPosition, Quaternion.identity);
+            var playerController = Object.Instantiate(_playerPrefab, _manager.NextSpawnPosition, Quaternion.identity);
 
             if (_manager.OutputTransitionComponent is IPusher pusher)
                 playerController.SetPushForce(pusher.GetPushData());

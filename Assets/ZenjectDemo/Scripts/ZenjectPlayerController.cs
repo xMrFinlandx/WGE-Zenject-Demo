@@ -1,7 +1,5 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using WorldGraphEditor;
-using Zenject;
 
 namespace ZenjectDemo
 {
