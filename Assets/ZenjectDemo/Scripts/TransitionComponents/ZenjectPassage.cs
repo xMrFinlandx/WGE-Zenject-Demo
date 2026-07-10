@@ -5,10 +5,11 @@ using Zenject;
 namespace ZenjectDemo
 {
     [RequireComponent(typeof(BoxCollider2D), typeof(SpriteRenderer))]
-    public class ZenjectPassage : MonoBehaviour, ITransitionComponent, IPusher
+    public class ZenjectPassage : MonoBehaviour, ITransitionComponent, IPusher, IPuller
     {
         [SerializeField] private PortsDropdown _port;
         [SerializeField] private Optional<Vector2> _pushForce;
+        [SerializeField] private Optional<Vector2> _pullForce;
         
         [SerializeField, HideInInspector] private BoxCollider2D _boxCollider;
         [SerializeField, HideInInspector] private SpriteRenderer _spriteRenderer;
@@ -36,6 +37,12 @@ namespace ZenjectDemo
 
         private void ResolveColor()
         {
+            if (_graphDataService != null && _graphDataService.IsPortVisited(GetGuid()) && this.IsShortcutDestination())
+            {
+                _spriteRenderer.color = new Color(0.44f, 1f, 0.37f);
+                return;
+            }
+            
             if (this.IsShortcutDestination() || this.IsOneWayDestination())
             {
                 _spriteRenderer.color = new Color(1f, 0.36f, 0.35f);
@@ -73,6 +80,11 @@ namespace ZenjectDemo
         public PushData GetPushData()
         {
             return _pushForce.Enabled ? new PushData(_pushForce.Value) : default;
+        }
+        
+        public PullData GetPullData()
+        {
+            return _pullForce.Enabled ? new PullData(_pullForce.Value) : default;
         }
         
         public void Traverse()

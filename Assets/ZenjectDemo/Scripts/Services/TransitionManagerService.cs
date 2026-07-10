@@ -61,11 +61,11 @@ namespace ZenjectDemo
         {
             try
             {
+                InputTransitionComponent = TransitionComponentUtility.FindByGuid(data.CurrentPassageGuid);
+                
                 TransitionStarted?.Invoke();
 
                 await _screenFadeService.ShowAsync(_cts.Token);
-
-                InputTransitionComponent = TransitionComponentUtility.FindByGuid(data.CurrentPassageGuid);
                 
                 _graphDataService.SetPortVisited(data.CurrentPassageGuid);
 
@@ -76,7 +76,7 @@ namespace ZenjectDemo
 
                 if (OutputTransitionComponent == null)
                 {
-                    Debug.LogError("failed to find output");
+                    Debug.LogError("Failed to find output");
                 }
                 else
                 {

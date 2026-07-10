@@ -281,6 +281,9 @@ MonoBehaviour:
   _pushForce:
     _enabled: 1
     _value: {x: 20, y: 45}
+  _pullForce:
+    _enabled: 0
+    _value: {x: 0, y: 0}
   _boxCollider: {fileID: 86837325}
   _spriteRenderer: {fileID: 86837323}
 --- !u!1 &268251739
@@ -674,6 +677,9 @@ MonoBehaviour:
   _pushForce:
     _enabled: 1
     _value: {x: 20, y: 0}
+  _pullForce:
+    _enabled: 1
+    _value: {x: -5, y: 0}
   _boxCollider: {fileID: 382137969}
   _spriteRenderer: {fileID: 382137968}
 --- !u!212 &382137968
@@ -1870,6 +1876,9 @@ MonoBehaviour:
   _pushForce:
     _enabled: 1
     _value: {x: -20, y: 0}
+  _pullForce:
+    _enabled: 1
+    _value: {x: 5, y: 0}
   _boxCollider: {fileID: 1981060469}
   _spriteRenderer: {fileID: 1981060468}
 --- !u!212 &1981060468

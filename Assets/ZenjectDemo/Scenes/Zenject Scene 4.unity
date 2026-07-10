@@ -281,6 +281,9 @@ MonoBehaviour:
   _pushForce:
     _enabled: 1
     _value: {x: -20, y: 45}
+  _pullForce:
+    _enabled: 0
+    _value: {x: 0, y: 0}
   _boxCollider: {fileID: 42880674}
   _spriteRenderer: {fileID: 42880672}
 --- !u!1 &86837321
@@ -445,6 +448,9 @@ MonoBehaviour:
   _pushForce:
     _enabled: 1
     _value: {x: 20, y: 0}
+  _pullForce:
+    _enabled: 1
+    _value: {x: -5, y: 0}
   _boxCollider: {fileID: 86837325}
   _spriteRenderer: {fileID: 86837323}
 --- !u!1 &111555590
@@ -1013,6 +1019,9 @@ MonoBehaviour:
   _pushForce:
     _enabled: 1
     _value: {x: -20, y: 0}
+  _pullForce:
+    _enabled: 1
+    _value: {x: 5, y: 0}
   _boxCollider: {fileID: 900166070}
   _spriteRenderer: {fileID: 900166069}
 --- !u!212 &900166069
@@ -1305,10 +1314,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.030633084
+    x: 0.0171875
     y: 0
-    width: 0.9403223
-    height: 1.0643836
+    width: 0.7194445
+    height: 0.71944445
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60

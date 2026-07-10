@@ -199,7 +199,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 2297618732363737569, guid: 75c111211f4f2f24a9f65da81824c992, type: 3}
-  m_Color: {r: 0.44, g: 1, b: 0.37, a: 1}
+  m_Color: {r: 0.4, g: 0.79, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -276,7 +276,10 @@ MonoBehaviour:
     _selectedName: Right
   _pushForce:
     _enabled: 1
-    _value: {x: 20, y: 45}
+    _value: {x: -20, y: 0}
+  _pullForce:
+    _enabled: 1
+    _value: {x: 5, y: 0}
   _boxCollider: {fileID: 42880674}
   _spriteRenderer: {fileID: 42880672}
 --- !u!1 &268251739
@@ -639,10 +642,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.030633084
+    x: 0.0171875
     y: 0
-    width: 0.9403223
-    height: 1.0643836
+    width: 0.7194445
+    height: 0.71944445
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60

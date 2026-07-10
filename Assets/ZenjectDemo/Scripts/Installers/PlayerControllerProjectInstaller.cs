@@ -10,7 +10,7 @@ namespace ZenjectDemo
         public override void InstallBindings()
         {
             Container.Bind<ZenjectPlayerController>().FromInstance(_playerPrefab);
-            Container.BindInterfacesAndSelfTo<PlayerSpawnService>().AsSingle().NonLazy();
+            Container.BindInterfacesAndSelfTo<PlayerLifecycleService>().AsSingle().NonLazy();
         }
     }
 }

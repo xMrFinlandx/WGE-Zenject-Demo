@@ -44,18 +44,34 @@ namespace ZenjectDemo
 
         public void SetPushForce(PushData pushData)
         {
-            if (pushData.Exists) 
-                _rigidbody.AddForce(pushData.Force, ForceMode2D.Impulse);
+            if (!pushData.Exists)
+                return;
+                
+            _rigidbody.AddForce(pushData.Force, ForceMode2D.Impulse);
+        }
+        
+        public void SetPullForce(PullData pullData)
+        {
+            if (!pullData.Exists)
+                return;
+            
+            _rigidbody.AddForce(pullData.Force, ForceMode2D.Impulse);
+            _rigidbody.bodyType = RigidbodyType2D.Kinematic;
         }
 
-        public void Enable()
+        public void EnableMovement()
         {
             _isControllerEnabled = true;
         }
         
-        private void Awake()
+        public void DisableMovement()
         {
             _isControllerEnabled = false;
+        }
+        
+        private void Awake()
+        {
+            DisableMovement();
         }
         
         private void FixedUpdate()
